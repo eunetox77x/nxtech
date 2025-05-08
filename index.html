@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <!-- SVG Logo Definition -->
     <svg style="display: none;">
-        <symbol id="nxtech-logo" viewBox="0 0 500 500">
-            <!-- Verde Neon no Preto -->
+        <symbol id="nxtech-logo-full" viewBox="0 0 500 500">
+            <symbol id="nxtech-logo-full" viewBox="0 0 800 200">
+                <use href="#nxtech-logo" x="0" y="0" width="200" height="200" />
+                <text x="230" y="130" font-family="Arial, sans-serif" font-size="100" font-weight="bold" fill="#ffffff">NXTECH</text>
+            </symbol>
             <rect x="50" y="50" width="400" height="400" rx="50" ry="50" fill="none" stroke="#7cfc00" stroke-width="25" />
             <path d="M150,150 L350,350 M150,350 L350,150" stroke="#7cfc00" stroke-width="40" stroke-linecap="round" />
             <circle cx="150" cy="150" r="20" fill="#7cfc00" />
@@ -21,32 +23,26 @@
         </symbol>
         
         <symbol id="nxtech-logo-full" viewBox="0 0 800 200">
-            <!-- Logo + Texto -->
             <use href="#nxtech-logo" x="0" y="0" width="200" height="200" />
             <text x="230" y="130" font-family="Arial, sans-serif" font-size="100" font-weight="bold" fill="#ffffff">NXTECH</text>
         </symbol>
     </svg>
-
-    <!-- Header -->
     <header>
-        <div class="logo">
+        <div class="logo"> 
             <svg class="logo-small" role="img" aria-label="NXTECH Logo">
                 <use href="#nxtech-logo" />
             </svg>
         </div>
-        <button class="nav-toggle" id="navToggle" aria-label="Menu de navegação"><a href="#navMenu">☰</a></button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu de navegação"><a href="#navMenu">☰</button></a>
         <nav>
             <ul id="navMenu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#about">Sobre Nós</a></li>
                 <li><a href="#contact">Contato</a></li>
-                <li><button class="login-btn" id="loginBtn">Entrar</button></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <svg height="80">
@@ -60,8 +56,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Serviços -->
     <section class="section" id="services">
         <div class="section-title">
             <h2>Nossos Serviços</h2>
@@ -99,8 +93,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Sobre Nós -->
     <section class="section about" id="about">
         <div class="section-title">
             <h2>Sobre Nós</h2>
@@ -118,8 +110,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Contato -->
     <section class="section" id="contact">
         <div class="section-title">
             <h2>Fale Conosco</h2>
@@ -186,8 +176,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer>
         <svg class="footer-logo" role="img" aria-label="NXTECH Logo">
             <use href="#nxtech-logo-full" />
@@ -204,8 +192,6 @@
             <p>&copy; 2025 NXTECH. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <!-- Modal de Login/Cadastro -->
     <div class="modal" id="authModal">
         <div class="modal-content">
             <button class="close-modal" id="closeModal">&times;</button>

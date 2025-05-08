@@ -21,7 +21,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background-color: rgba(10, 10, 10, 0.95);
     padding: 1rem;
@@ -35,8 +34,8 @@ header {
     align-items: center;
 }
 a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #5db400; /* Define a cor como azul (pode ser alterado) */
+    text-decoration: none; 
+    color: #5db400; 
   }
 .logo-small {
     height: 40px;
@@ -108,7 +107,6 @@ nav a:hover::after {
     color: var(--dark-bg);
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('/api/placeholder/1200/600') center/cover no-repeat;
     height: 100vh;
@@ -171,7 +169,6 @@ nav a:hover::after {
     color: var(--dark-bg);
 }
 
-/* Serviços */
 .section {
     padding: 5rem 1rem;
 }
@@ -231,7 +228,6 @@ nav a:hover::after {
     font-size: 1.5rem;
 }
 
-/* Sobre Nós */
 .about {
     background-color: var(--secondary-bg);
 }
@@ -271,7 +267,6 @@ nav a:hover::after {
     margin-bottom: 1.5rem;
 }
 
-/* Contato */
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -339,7 +334,6 @@ textarea.form-control {
     resize: vertical;
 }
 
-/* Footer */
 footer {
     background-color: #050505;
     padding: 3rem 1rem;
@@ -400,7 +394,6 @@ footer {
     color: #666;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -506,7 +499,6 @@ footer {
     display: none;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
     .hero h1 {
         font-size: 2.5rem;
